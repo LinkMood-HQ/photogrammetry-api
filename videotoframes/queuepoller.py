@@ -9,9 +9,9 @@ import sys
 from imagedetect import imagedetect
 
 sqs = boto3.client('sqs')
-s3_client = boto3.client('s3', region_name='ca-central-1')
+s3_client = boto3.client('s3', region_name='us-east-1')
 output_directory = './frames'
-queue_url = 'https://sqs.eu-west-2.amazonaws.com/029474750832/creatar-3d-objects'
+queue_url = 'https://sqs.us-east-1.amazonaws.com/099829585053/scan-queue'
 api_url = 'https://quickscan.live/finalobject'
 
 # Send message to SQS queue

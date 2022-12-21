@@ -16,8 +16,8 @@ logger.setLevel(logging.INFO)
 
 bucket_name = 'quickscanvideoswift'
 sqs = boto3.client('sqs')
-queue_url = 'https://sqs.ca-central-1.amazonaws.com/861570318875/3DObject'
-s3_client = boto3.client('s3', region_name='ca-central-1')
+queue_url = 'https://sqs.us-east-1.amazonaws.com/099829585053/scan-queue'
+s3_client = boto3.client('s3', region_name='us-east-1')
 output_directory = '/tmp'
 
 

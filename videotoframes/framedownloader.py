@@ -1,7 +1,7 @@
 import boto3
 import os
 import shutil
-s3_client = boto3.client('s3', region_name='ca-central-1')
+s3_client = boto3.client('s3', region_name='us-east-1')
 
 output_directory = './frames'
 
